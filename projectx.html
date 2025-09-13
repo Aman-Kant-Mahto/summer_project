@@ -1,138 +1,137 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Launch OS Button</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    background-image: url('https://images.pexels.com/photos/3231775/pexels-photo-3231775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-size: cover;
-    background-position: center;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  .bigger-font {
-    font-size: 36px; /* Adjust the font size as needed */
-    color: white; /* Text color */
-    text-align: center;
-    padding: 100px; /* Add padding for better visibility */
-  }
-  .igger-font {
-    font-size: 24px; /* Adjust the font size as needed */
-    color: white; /* Text color */
-  }
-  .launch-button {
-    padding: 15px 30px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-bottom: 20px;
-  }
-  .launch-button:hover {
-    background-color: #2980b9;
-  }
-  .input-container {
-    display: flex;
-    gap: 10px;
-  }
-  .custom-input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  .submit-button {
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
- border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  .submit-button:hover {
-    background-color: #2980b9;
-  }
-.textarea {
-  position: relative;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyWebUi</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #2c3e50, #3498db);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: #fff;
+    }
 
-.textarea form {
-  display: inline-block;
-}
+    .header {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
 
+    .section-title {
+      font-size: 24px;
+      margin-top: 40px;
+      font-style: italic;
+    }
 
-#w3review {
-  position: absolute;
-  top:100px;
-  right: 320px;
-}
+    .form-section {
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
+    .launch-button, .submit-button {
+      padding: 12px 24px;
+      margin: 10px;
+      background-color: #1abc9c;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
 
-</style>
+    .launch-button:hover, .submit-button:hover {
+      background-color: #16a085;
+    }
+
+    .custom-input {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      width: 300px;
+    }
+
+    .input-container {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    textarea.custom-input {
+      resize: vertical;
+      width: 100%;
+      max-width: 600px;
+    }
+  </style>
 </head>
 <body>
-<form action="http://65.0.130.148/cgi-bin/project7.py">
-<div class = "textarea">
-  <textarea id="w3review" name="w" rows="4" cols="50"></textarea>
-   
-</div>
-</form>
-</style>
-</head>
-<body>
-<div class="bigger-font">
-  MyWebUi
-</div>
-<form action="http://65.0.130.148/cgi-bin/project5.py" method="post">
+  <div class="header">MyWebUi</div>
+
+  <div class="form-section">
+    <form action="http://13.204.65.142/cgi-bin/linuxcom.py" method="post">
       <input class="custom-input" type="text" name="na" placeholder="Enter your Command">
-       <button class="launch-button" type="submit">Linux</button>
-</form>
-  <form action="http://65.0.130.148/cgi-bin/project7.py" method="post">
-    <button class="launch-button" type="submit">submit note</button>
-  </form>
-  <form action="http://65.0.130.148/cgi-bin/project.py" method="post">
-    <button class="launch-button" type="submit">Launch OS</button>
-  </form>
+      <button class="launch-button" type="submit">Linux</button>
+    </form>
 
-  <form action="http://65.0.130.148/cgi-bin/project3.py" method="post">
-    <button class="launch-button" type="submit">Total Os </button>
-  </form>
-<form action="http://65.0.130.148/cgi-bin/project6.py" method="post">
-        <textarea  class="custom-input" name="code" rows="4" cols="50"></textarea>
-       <button class="launch-button" type="submit">Python Compiler</button>
-</form>
-  <form action="http://65.0.130.148/cgi-bin/project1.py" method="post">
-    <button class="launch-button" type="submit">Launch Ec2 Instance</button>
-  </form>
+    <form action="http://13.204.65.142/cgi-bin/pyhtoncompiler.py" method="post">
+      <textarea class="custom-input" name="code" rows="4" cols="50" placeholder="Enter Python code..."></textarea>
+      <button class="launch-button" type="submit">Python Compiler</button>
+    </form>
 
+    <form action="http://13.204.65.142/cgi-bin/boto3ec2.py" method="post">
+      <button class="launch-button" type="submit">Launch EC2 Instance</button>
+    </form>
 
-  <form action="http://65.0.130.148/cgi-bin/project4.py" method="post">
-    <button class="launch-button" type="submit">Launch S3 Bucket</button>
-  </form>
-  <div class="igger-font">
-     CHATGPT
+    <form action="http://13.204.65.142/cgi-bin/boto3s3.py" method="post">
+      <button class="launch-button" type="submit">Launch S3 Bucket</button>
+    </form>
+
+    <form action="http://13.204.65.142/cgi-bin/dockeroslaunch.py" method="post">
+      <button class="launch-button" type="submit">Docker OS Launch</button>
+    </form>
+
+    <form action="http://13.204.65.142/cgi-bin/chatgptapi.py" method="post">
+      <div class="input-container">
+        <input class="custom-input" type="text" name="prompt" placeholder="Enter your ChatGPT Prompt">
+        <button class="submit-button" type="submit">Submit</button>
+      </div>
+    </form>
+
+    <form action="http://13.204.65.142/cgi-bin/langchaincombine.py" method="post">
+      <button class="launch-button" type="submit">LangChain Combine</button>
+    </form>
+
+    <form action="http://13.204.65.142/cgi-bin/langchaingoogle.py" method="post">
+      <button class="launch-button" type="submit">LangChain Google</button>
+    </form>
+
+    <form action="http://13.204.65.142/cgi-bin/notepad.py" method="post">
+      <textarea class="custom-input" name="note" rows="4" cols="50" placeholder="Write your note..."></textarea>
+      <button class="launch-button" type="submit">Submit Note</button>
+    </form>
+
+    <form action="http://13.204.65.142/cgi-bin/wikipedia.py" method="post">
+      <input class="custom-input" type="text" name="query" placeholder="Search Wikipedia">
+      <button class="launch-button" type="submit">Search</button>
+    </form>
+
+    <form action="http://13.204.65.142/cgi-bin/youtube.py" method="post">
+      <input class="custom-input" type="text" name="video" placeholder="Search YouTube">
+      <button class="launch-button" type="submit">Search</button>
+    </form>
   </div>
 
-  <form action="http://65.0.130.148/cgi-bin/project2.py" method="post">
-    <div class="input-container">
-      <input class="custom-input" type="text" name="name" placeholder="Enter your Prompt">
-      <button class="submit-button" type="submit">Submit</button>
-    </div>
-  </form>
+  <div class="section-title">CHATGPT</div>
 </body>
 </html>
