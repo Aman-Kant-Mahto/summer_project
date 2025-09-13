@@ -10,7 +10,7 @@ form = cgi.FieldStorage()
 data1=form.getvalue("search_query1")
 print(data1)
 from langchain.llms import OpenAI
-my_openapi_key="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"
+my_openapi_key="****"
 from langchain.chains import LLMChain
 
 
