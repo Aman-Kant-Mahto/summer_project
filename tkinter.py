@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+print("Content-type: text/html\n")
+
+import cgi
+form = cgi.FieldStorage()
 import os
 import pywhatkit as kit
 import smtplib
